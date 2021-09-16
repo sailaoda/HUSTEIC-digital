@@ -1,0 +1,7 @@
+Running: xsim.dir/bujinsim_behav/xsimk.exe -simmode gui -wdb bujinsim_behav.wdb -simrunnum 0 -socket 50008
+Design successfully loaded
+Design Loading Memory Usage: 5704 KB (Peak: 5704 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 6276 KB (Peak: 6276 KB)
+Simulation CPU Usage: 31 ms

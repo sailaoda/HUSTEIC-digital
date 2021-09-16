@@ -1,0 +1,82 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Wed Sep 16 23:35:08 2020
+| Host         : LAPTOP-CCETATNC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_clock_control_sets_placed.rpt
+| Design       : top_clock
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    62 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            2 |
+|      2 |            1 |
+|      4 |            6 |
+|      7 |            1 |
+|     12 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              29 |           10 |
+| No           | No                    | Yes                    |               1 |            1 |
+| No           | Yes                   | No                     |              26 |            7 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              34 |           14 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+----------------------------------+-------------------------------+------------------+----------------+
+|         Clock Signal        |           Enable Signal          |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++-----------------------------+----------------------------------+-------------------------------+------------------+----------------+
+|  clk1_BUFG                  |                                  |                               |                1 |              1 |
+|  clk1_BUFG                  |                                  | H1/FSM_onehot_Hour12_reg[1]_0 |                1 |              1 |
+|  clk1_BUFG                  | H0/Hour24[5]_i_1_n_0             | H1/FSM_onehot_Hour12_reg[1]_0 |                1 |              2 |
+|  U0/iDIG_reg[3]_i_2_n_0     |                                  |                               |                2 |              4 |
+|  clk1_BUFG                  | M0/E[0]                          | H1/FSM_onehot_Hour12_reg[1]_0 |                2 |              4 |
+|  clk1_BUFG                  | S0/E[0]                          | H1/FSM_onehot_Hour12_reg[1]_0 |                1 |              4 |
+|  clk1_BUFG                  | S0/Q_reg[3]_0[0]                 | H1/FSM_onehot_Hour12_reg[1]_0 |                2 |              4 |
+|  clk1_BUFG                  | S1/Q_reg[3]_0[0]                 | H1/FSM_onehot_Hour12_reg[1]_0 |                3 |              4 |
+|  clk1_BUFG                  | en_IBUF                          | H1/FSM_onehot_Hour12_reg[1]_0 |                1 |              4 |
+|  U0/oSEG_inferred__0/i__n_0 |                                  |                               |                2 |              7 |
+|  clk1_BUFG                  | H1/FSM_onehot_Hour12[11]_i_1_n_0 | H1/FSM_onehot_Hour12_reg[1]_0 |                4 |             12 |
+|  clk_IBUF_BUFG              |                                  |                               |                5 |             17 |
+|  clk_IBUF_BUFG              |                                  | clear                         |                7 |             26 |
++-----------------------------+----------------------------------+-------------------------------+------------------+----------------+
+
+

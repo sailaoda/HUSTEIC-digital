@@ -1,0 +1,412 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Sep 15 16:31:24 2020
+# Process ID: 14844
+# Current directory: E:/project/digital_clock1/digital_clock1.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: E:/project/digital_clock1/digital_clock1.runs/synth_1/top.vds
+# Journal file: E:/project/digital_clock1/digital_clock1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10752 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 812.941 ; gain = 178.797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_adjust' [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/clock_adjust.v:23]
+INFO: [Synth 8-6157] synthesizing module 'c60' [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/c60.v:23]
+INFO: [Synth 8-6157] synthesizing module 'c10' [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/c10.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'c10' (2#1) [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/c10.v:22]
+INFO: [Synth 8-6157] synthesizing module 'c6' [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/c6.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'c6' (3#1) [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/c6.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'c60' (4#1) [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/c60.v:23]
+INFO: [Synth 8-6157] synthesizing module 'c24' [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/c24.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'c24' (5#1) [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/c24.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_adjust' (6#1) [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/clock_adjust.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_alarm' [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/clock_alarm.v:23]
+INFO: [Synth 8-6157] synthesizing module 'set_time' [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/set_time.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'set_time' (7#1) [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/set_time.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_alarm' (8#1) [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/clock_alarm.v:23]
+INFO: [Synth 8-6157] synthesizing module 'day24_12' [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/day24_12.v:23]
+WARNING: [Synth 8-6104] Input port 'day' has an internal driver [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/day24_12.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'day24_12' (9#1) [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/day24_12.v:23]
+INFO: [Synth 8-6157] synthesizing module 'radio' [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/radio.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'radio' (10#1) [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/radio.v:22]
+INFO: [Synth 8-6157] synthesizing module 'scan_disp' [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/scan_disp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux6_1' [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/mux6_1.v:22]
+WARNING: [Synth 8-567] referenced signal 'ch0' should be on the sensitivity list [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/mux6_1.v:34]
+WARNING: [Synth 8-567] referenced signal 'ch1' should be on the sensitivity list [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/mux6_1.v:34]
+WARNING: [Synth 8-567] referenced signal 'ch2' should be on the sensitivity list [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/mux6_1.v:34]
+WARNING: [Synth 8-567] referenced signal 'ch3' should be on the sensitivity list [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/mux6_1.v:34]
+WARNING: [Synth 8-567] referenced signal 'ch4' should be on the sensitivity list [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/mux6_1.v:34]
+WARNING: [Synth 8-567] referenced signal 'ch5' should be on the sensitivity list [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/mux6_1.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'mux6_1' (11#1) [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/mux6_1.v:22]
+INFO: [Synth 8-6157] synthesizing module 'posdecode' [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/posdecode.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'posdecode' (12#1) [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/posdecode.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bcd_7seg' [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/bcd_7seg.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_7seg' (13#1) [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/bcd_7seg.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'scan_disp' (14#1) [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/scan_disp.v:23]
+WARNING: [Synth 8-3848] Net day in module/entity top does not have driver. [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/top.v:36]
+WARNING: [Synth 8-3848] Net day_radio in module/entity top does not have driver. [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/top.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'top' (15#1) [E:/project/digital_clock1/digital_clock1.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design radio has unconnected port cr
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 876.605 ; gain = 242.461
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 876.605 ; gain = 242.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 876.605 ; gain = 242.461
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/project/digital_clock1/digital_clock1.srcs/constrs_1/new/adda.xdc]
+Finished Parsing XDC File [E:/project/digital_clock1/digital_clock1.srcs/constrs_1/new/adda.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/project/digital_clock1/digital_clock1.srcs/constrs_1/new/adda.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 998.219 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 998.219 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 998.219 ; gain = 364.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 998.219 ; gain = 364.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 998.219 ; gain = 364.074
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "posr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 998.219 ; gain = 364.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 17    
++---Registers : 
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 11    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   7 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 18    
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module c10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module c6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module c24 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module day24_12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+Module radio 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module mux6_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module posdecode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design top has port pos[7] driven by constant 1
+WARNING: [Synth 8-3917] design top has port pos[6] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 998.219 ; gain = 364.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 998.219 ; gain = 364.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 998.219 ; gain = 364.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 998.219 ; gain = 364.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1003.508 ; gain = 369.363
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1003.508 ; gain = 369.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1003.508 ; gain = 369.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1003.508 ; gain = 369.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1003.508 ; gain = 369.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1003.508 ; gain = 369.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     6|
+|3     |LUT1   |    13|
+|4     |LUT2   |    27|
+|5     |LUT3   |    15|
+|6     |LUT4   |    54|
+|7     |LUT5   |    29|
+|8     |LUT6   |    53|
+|9     |FDCE   |    72|
+|10    |IBUF   |     9|
+|11    |OBUF   |    17|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+-------------+------+
+|      |Instance       |Module       |Cells |
++------+---------------+-------------+------+
+|1     |top            |             |   297|
+|2     |  u_clk_adj    |clock_adjust |   110|
+|3     |    hour       |c24_1        |    59|
+|4     |    minute     |c60_2        |    24|
+|5     |      tens     |c6_6         |     9|
+|6     |      units    |c10_7        |    15|
+|7     |    second     |c60_3        |    27|
+|8     |      tens     |c6_4         |    15|
+|9     |      units    |c10_5        |    12|
+|10    |  u_clk_alarm  |clock_alarm  |    48|
+|11    |    u_set_time |set_time     |    48|
+|12    |      hour     |c24          |    24|
+|13    |      minute   |c60          |    24|
+|14    |        tens   |c6_0         |    10|
+|15    |        units  |c10          |    14|
+|16    |  u_clock      |clk_div      |    70|
+|17    |  u_radio      |radio        |     3|
+|18    |  u_scan_disp  |scan_disp    |    37|
+|19    |    u_count    |c6           |    37|
++------+---------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1003.508 ; gain = 369.363
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1003.508 ; gain = 247.750
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1003.508 ; gain = 369.363
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1019.570 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1019.570 ; gain = 662.773
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1019.570 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/project/digital_clock1/digital_clock1.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 15 16:32:13 2020...

@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../duogongnengshuzizhong.srcs/sources_1/new/SEG7_LUT.v" \
+"../../../../duogongnengshuzizhong.srcs/sources_1/new/baoshi.v" \
+"../../../../duogongnengshuzizhong.srcs/sources_1/new/counter10.v" \
+"../../../../duogongnengshuzizhong.srcs/sources_1/new/counter12.v" \
+"../../../../duogongnengshuzizhong.srcs/sources_1/new/counter24.v" \
+"../../../../duogongnengshuzizhong.srcs/sources_1/new/counter6.v" \
+"../../../../duogongnengshuzizhong.srcs/sources_1/new/top_clock.v" \
+"../../../../duogongnengshuzizhong.srcs/sim_1/new/top_clocksim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

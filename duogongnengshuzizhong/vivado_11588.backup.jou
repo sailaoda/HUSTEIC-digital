@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Sep 16 23:19:16 2020
+# Process ID: 11588
+# Current directory: C:/Users/wuyesai/Desktop/duogongnengshuzizhong
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4596 C:\Users\wuyesai\Desktop\duogongnengshuzizhong\duogongnengshuzizhong.xpr
+# Log file: C:/Users/wuyesai/Desktop/duogongnengshuzizhong/vivado.log
+# Journal file: C:/Users/wuyesai/Desktop/duogongnengshuzizhong\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wuyesai/Desktop/duogongnengshuzizhong/duogongnengshuzizhong.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/wuyesai/Desktop/duogongnengshuzizhong/duogongnengshuzizhong.runs/impl_1/top_clock.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/wuyesai/Desktop/duogongnengshuzizhong/duogongnengshuzizhong.runs/impl_1/top_clock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

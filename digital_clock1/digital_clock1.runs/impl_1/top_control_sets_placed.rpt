@@ -1,0 +1,90 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Sep 15 16:33:06 2020
+| Host         : LAPTOP-PCTNE6L5 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    12 |
+|    Minimum number of control sets                        |    12 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    48 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    12 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     9 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              32 |           11 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              40 |           19 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+-------------------------------------------------------+------------------+------------------+----------------+
+|     Clock Signal    |                     Enable Signal                     | Set/Reset Signal | Slice Load Count | Bel Load Count |
++---------------------+-------------------------------------------------------+------------------+------------------+----------------+
+|  clk_1hz_BUFG       |                                                       | u_clock/cr       |                2 |              4 |
+|  clk_1hz_BUFG       | u_clk_adj/minute/units/bcd10r_reg[1]_0[0]             | u_clock/cr       |                2 |              4 |
+|  clk_1hz_BUFG       | u_clk_adj/minute/units/E[0]                           | u_clock/cr       |                3 |              4 |
+|  clk_1hz_BUFG       | u_clk_adj/second/units/E[0]                           | u_clock/cr       |                2 |              4 |
+|  clk_1hz_BUFG       | u_clk_adj/second/tens/clock_adjust[0]                 | u_clock/cr       |                2 |              4 |
+|  clk_1hz_BUFG       | u_clk_alarm/u_set_time/hour/bcd_tr                    | u_clock/cr       |                1 |              4 |
+|  clk_1hz_BUFG       | u_clk_alarm/u_set_time/minute/units/E[0]              | u_clock/cr       |                2 |              4 |
+|  clk_1hz_BUFG       | u_clk_adj/hour/bcd_tr                                 | u_clock/cr       |                1 |              4 |
+|  u_clock/clk_1k     | en_clock_IBUF                                         | u_clock/cr       |                2 |              4 |
+|  clk_1hz_BUFG       | u_clk_alarm/u_set_time/minute/units/clock_alarm_en[0] | u_clock/cr       |                4 |              8 |
+|  u_clock/clk_1k     |                                                       | u_clock/cr       |                5 |             11 |
+|  clk_100m_IBUF_BUFG |                                                       | u_clock/cr       |                4 |             17 |
++---------------------+-------------------------------------------------------+------------------+------------------+----------------+
+
+

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Sep 16 19:04:32 2020
+# Process ID: 29072
+# Current directory: C:/Users/wuyesai/Desktop/digital_clock1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34636 C:\Users\wuyesai\Desktop\digital_clock1\digital_clock1.xpr
+# Log file: C:/Users/wuyesai/Desktop/digital_clock1/vivado.log
+# Journal file: C:/Users/wuyesai/Desktop/digital_clock1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wuyesai/Desktop/digital_clock1/digital_clock1.xpr
+update_compile_order -fileset sources_1
+save_project_as shudian_clock C:/Users/wuyesai/Desktop/shudian_clock -force
