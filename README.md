@@ -7,7 +7,7 @@
 
 [![](https://img.shields.io/github/repo-size/sailaoda/husteic_digital.svg)](https://img.shields.io/github/repo-size/sailaoda/husteic_digital.svg) 
 [![](https://img.shields.io/github/stars/sailaoda/husteic_digital.svg)](https://img.shields.io/github/stars/sailaoda/husteic_digital.svg) 
-[![](https://cdn.jsdelivr.net/gh/sailaoda/sai_img//img/3/husteic_digital.svg)](https://img.shields.io/github/forks/sailaoda/husteic_digital.svg)
+[![](https://img.shields.io/github/forks/sailaoda/husteic_digital.svg)](https://img.shields.io/github/forks/sailaoda/husteic_digital.svg)
 
 &nbsp;
 
